@@ -3,8 +3,7 @@ var operacion = prompt("Que operacion deseas usar?");
 if (operacion === "volumen de un cilindro") {
 	var radio = prompt("Cual es el radio del cilindro?");
 	var altura = prompt("Cual es la altura del cilindro?");
-	var datos = [radio, altura];
-	alert("El volumen del cilindro es: " + datos[0] * datos[0] * Math.PI * datos[1]);
+	alert("El volumen del cilindro es: " + Math.PI * Math.pow(radio,2) * altura);
 }
 if (operacion === "transformar de onzas a toneladas") {
 	var onzas = prompt("Cuantas onzas quieres transformar?");
